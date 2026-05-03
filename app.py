@@ -7,8 +7,8 @@ import json
 
 # --- Configuration (These will be Railway environment variables) ---
 openai.api_key = os.environ["OPENAI_API_KEY"]
-AMAZON_API_KEY = os.environ["AMAZON_API_KEY"]
-AMAZON_ASSOCIATE_TAG = os.environ["AMAZON_ASSOCIATE_TAG"]
+#AMAZON_API_KEY = os.environ["AMAZON_API_KEY"]
+#AMAZON_ASSOCIATE_TAG = os.environ["AMAZON_ASSOCIATE_TAG"]
 AIRTABLE_BASE_ID = os.environ["AIRTABLE_BASE_ID"]
 AIRTABLE_TABLE_NAME = os.environ["AIRTABLE_TABLE_NAME"]
 AIRTABLE_API_KEY = os.environ["AIRTABLE_API_KEY"]
@@ -51,10 +51,10 @@ def search_products(style=None, category=None, max_price=None, room=None):
         return []
 
 # --- Helper: Search Amazon PAAPI (live products) ---
-def search_amazon(query, max_price=None):
+#def search_amazon(query, max_price=None):
     # This is a placeholder – Amazon PAAPI requires specific signature logic
     # I'll provide the full implementation separately
-    return []
+ #   return []
 
 # --- Streamlit UI ---
 st.set_page_config(page_title="DesignBuddy", page_icon="🏠")
